@@ -15,14 +15,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-    <script src="dataDict.js"></script>
-    
     <!-- Custom styles for this template -->
     <link href="custom.css" rel="stylesheet">
   </head>
 
-  <body ng-app="dataDictApp" ng-controller="dataDictCtrl as dataDict">
+  <body>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse  navbar-fixed-top">
@@ -60,7 +57,9 @@
     <div class="container" >
 
     <ul class="list-group" >
-      <li class="list-group-item" ng-repeat="item in dataDict.items"><span class="badge">{{dataDict.itemCount()}}</span>{{item.name}}</li>
+      <li class="list-group-item">Item</li>
+      <li class="list-group-item">Item</li>
+      <li class="list-group-item">Item</li>
     </ul>
     
     </div> <!-- /container -->
