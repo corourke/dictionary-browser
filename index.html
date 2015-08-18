@@ -57,10 +57,11 @@
       </div>
     </nav>
 
-    <div class="container" >
+    <div class="container">
 
-    <ul class="list-group" >
-      <li class="list-group-item" ng-repeat="item in dataDict.items"><span class="badge">{{dataDict.itemCount()}}</span>{{item.name}}</li>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="item in dataDict.allItems()">
+        <span class="badge">{{item.metricCount}}</span>{{item.name}}</li>
     </ul>
     
     </div> <!-- /container -->

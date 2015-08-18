@@ -1,14 +1,20 @@
 var app = angular.module('dataDictApp', []);
-app.controller('dataDictCtrl', function() {
+app.controller('dataDictCtrl', function($scope, $http) {
   
     var itemList = this;
+    itemList.items = [null];
     
-    itemList.items = [
-      {name:'Purchasing Analytics', done:true},
-      {name:'Recievables Analytics', done:true},
-      {name:'General Ledger Analytics', done:false} ];
-
- 
+    $http.get("data.json").
+        success( function(data) {
+            itemList = data;
+            console.log(JSON.stringify(itemList));
+        }
+    );
+    
+    itemList.allItems = function() {
+        return itemList.items;
+    }
+    
     itemList.itemCount = function() {
       var count = 0;
       angular.forEach(itemList.items, function(item) {
