@@ -1,14 +1,228 @@
-{"items":[
-  {
-    "name": "Purchasing Analytics",
-    "metricCount": 42
-  },
-  {
-    "name": "Recivables Analytics",
-    "metricCount": 52
-  },
-  {
-    "name": "General Ledger Analytics",
-    "metricCount": 62
-  }
-]}
+{
+  "packages": [{
+    "name": "Finance",
+    "facts": [{
+      "name": "Accounts Payable"
+    }, {
+      "name": "Accounts Receivable Analytics"
+    }, {
+      "name": "Billing Analytics"
+    }, {
+      "name": "Dispute Management Analytics"
+    }, {
+      "name": "Exposure Reporting"
+    }, {
+      "name": "General Ledger"
+    }, {
+      "name": "Replenishment Forecast"
+    }]
+  }, {
+    "name": "Inventory",
+    "facts": [{
+      "name": "Inventory History"
+    }, {
+      "name": "Inventory Turns Analytics"
+    }, {
+      "name": "Material Movement Analytics"
+    }, {
+      "name": "Material Spend Analytics"
+    }, {
+      "name": "MRP Analytics"
+    }, {
+      "name": "Stock Analytics"
+    }, {
+      "name": "Stock Summary"
+    }]
+  }, {
+    "name": "Master Data Management",
+    "facts": [{
+      "name": "Material Transaction Ready"
+    }]
+  }, {
+    "name": "Production Planning",
+    "facts": [{
+      "name": "Consumption History"
+    }, {
+      "name": "Plan Order Forecast Analytics"
+    }, {
+      "name": "Planned Order"
+    }, {
+      "name": "Production Operation"
+    }, {
+      "name": "Production Operation Snapshot"
+    }, {
+      "name": "Production Order"
+    }, {
+      "name": "Production Order Snapshot"
+    }]
+  }, {
+    "name": "Purchasing",
+    "facts": [{
+      "name": "PO Audit Trail"
+    }, {
+      "name": "Purchase Requisition"
+    }, {
+      "name": "Purchasing Analytics",
+      "metrics": [{
+        "name": "ACH Payment % (Amt)"
+      }, {
+        "name": "ACH Payment % (Line Count)"
+      }, {
+        "name": "Avg Unit Price - prev month"
+      }, {
+        "name": "Avg Unit Price - prev month last fiscal year"
+      }, {
+        "name": "Cash Discount - Doc Curr"
+      }, {
+        "name": "Cash Discount - Loc Curr"
+      }, {
+        "name": "Create- Post"
+      }, {
+        "name": "Daily Purchase Average"
+      }, {
+        "name": "Days Late"
+      }, {
+        "name": "Days Late- Paid"
+      }, {
+        "name": "Days Open"
+      }, {
+        "name": "Days Open Amt  1-30"
+      }, {
+        "name": "Days Open Amt 31-60"
+      }, {
+        "name": "Days Open Amt 61-90"
+      }, {
+        "name": "Days Open Amt 91+"
+      }, {
+        "name": "Days Past Due"
+      }, {
+        "name": "Days open from Create Date"
+      }, {
+        "name": "Days open from Due Date"
+      }, {
+        "name": "Diff Avg Unit Price - prev month last fiscal year vs prev month"
+      }, {
+        "name": "Discount Taken"
+      }, {
+        "name": "Early Payment Amt"
+      }, {
+        "name": "Gross Amt"
+      }, {
+        "name": "Inv PO Unit Price"
+      }, {
+        "name": "Inv Std Unit Price"
+      }, {
+        "name": "Invoice - Create"
+      }, {
+        "name": "Invoice Amount"
+      }, {
+        "name": "Invoice Amt"
+      }, {
+        "name": "Invoice Amt (Global)"
+      }, {
+        "name": "Invoice Amt (Local)"
+      }, {
+        "name": "Invoice Amt - Doc Curr"
+      }, {
+        "name": "Invoice Count"
+      }, {
+        "name": "Invoice Line Count"
+      }, {
+        "name": "Invoice Qty"
+      }, {
+        "name": "Invoices Paid Amt (Global)"
+      }, {
+        "name": "Invoices Paid Amt (Local)"
+      }, {
+        "name": "Invoices Paid Amt - Doc Curr"
+      }, {
+        "name": "Late Payment Amt"
+      }, {
+        "name": "Late Payment Amt - Doc Curr"
+      }, {
+        "name": "Net Amt"
+      }, {
+        "name": "Net Amt - Doc Curr"
+      }, {
+        "name": "On Time Amt"
+      }, {
+        "name": "On Time Amt - Doc Curr"
+      }, {
+        "name": "PO Doc Count"
+      }, {
+        "name": "PO Doc Qty"
+      }, {
+        "name": "PO Inv Value"
+      }, {
+        "name": "PO Item Count"
+      }, {
+        "name": "PO Std Unit Price"
+      }, {
+        "name": "PO Unit Price (Global Currency)"
+      }, {
+        "name": "PO Unit Price (Local Currency)"
+      }, {
+        "name": "Past Due Amount"
+      }, {
+        "name": "Past Due Amt"
+      }, {
+        "name": "Past Due Amt - Doc Curr"
+      }, {
+        "name": "Purch Doc Count"
+      }, {
+        "name": "Tax"
+      }, {
+        "name": "Tax - Doc Curr"
+      }]
+    }, {
+      "name": "Purchasing History"
+    }, {
+      "name": "Shipment/Inbound Delivery Analytics"
+    }, {
+      "name": "Bill Of Materials (BOM)"
+    }]
+  }, {
+    "name": "Quality",
+    "facts": [{
+      "name": "Inspection Lot Analytics"
+    }, {
+      "name": "Quality Notification Item Analytics"
+    }, {
+      "name": "Quality Notifications Analytics"
+    }, {
+      "name": "Receivings,Inspection and Notifications"
+    }]
+  }, {
+    "name": "Sales Operations",
+    "facts": [{
+      "name": "Sales Analysis"
+    }, {
+      "name": "Sales Delivery Analysis"
+    }, {
+      "name": "Sales Pricing Analytics"
+    }]
+  }, {
+    "name": "Shortages",
+    "facts": [{
+      "name": "Analysis of Shortages"
+    }, {
+      "name": "Excess and Shortage Analytics"
+    }]
+  }, {
+    "name": "Third Party Logistics",
+    "facts": [{
+      "name": "Direct Ship Analytics"
+    }, {
+      "name": "Direct Ship SO/PO discrepancies Analytics"
+    }]
+  }, {
+    "name": "Warehouse Management",
+    "facts": [{
+      "name": "Warehouse Physical Inventory Analytics"
+    }, {
+      "name": "Warehouse Quants Analytics"
+    }, {
+      "name": "Warehouse Transfer Order Analytics"
+    }]
+  }]
+}

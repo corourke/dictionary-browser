@@ -2,22 +2,21 @@ var app = angular.module('dataDictApp', []);
 app.controller('dataDictCtrl', function($scope, $http) {
   
     var itemList = this;
-    itemList.items = [null];
+    itemList.packages = [null];
     
     $http.get("data.json").
-        success( function(data) {
-            itemList = data;
-            console.log(JSON.stringify(itemList));
+        success( function(json) {
+            itemList = json;
         }
     );
     
-    itemList.allItems = function() {
-        return itemList.items;
+    itemList.allPackages = function() {
+        return itemList.packages;
     }
     
-    itemList.itemCount = function() {
+    itemList.factCount = function(package) {
       var count = 0;
-      angular.forEach(itemList.items, function(item) {
+      angular.forEach(package, function(facts) {
         count += 1;
       });
       return count;
