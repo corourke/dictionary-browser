@@ -14,9 +14,9 @@ app.controller('dataDictCtrl', function($scope, $http) {
         return itemList.packages;
     }
     
-    itemList.factCount = function(package) {
+    itemList.factCount = function(fopsPackage) {
       var count = 0;
-      angular.forEach(package, function(facts) {
+      angular.forEach(fopsPackage.facts, function(x) {
         count += 1;
       });
       return count;

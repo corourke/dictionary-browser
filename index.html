@@ -61,7 +61,7 @@
 
     <ul class="list-group">
       <li class="list-group-item" ng-repeat="package in dataDict.allPackages()">
-        <span class="badge">{{package.factCount(package)}}</span>{{package.name}}</li>
+        <span class="badge">{{package.facts.length}}</span>{{package.name}}</li>
     </ul>
     
     </div> <!-- /container -->
