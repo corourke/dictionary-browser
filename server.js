@@ -2,4 +2,4 @@ var connect = require('connect');
 var serveStatic = require('serve-static');
 var app = connect();
 app.use(serveStatic("."));
-app.listen(8080);
+app.listen(process.env.PORT, process.env.IP);
